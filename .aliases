@@ -1,0 +1,23 @@
+# Colorful ZSH
+if [ -x /usr/bin/dircolors ]; then
+  test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+  alias ls='ls_extended'
+  alias dir='dir --color=auto'
+  alias vdir='vdir --color=auto'
+  alias grep='grep --color=auto'
+  alias fgrep='fgrep --color=auto'
+  alias egrep='egrep --color=auto'
+fi
+
+# Personal aliases
+alias ll='ls_extended -alF'
+alias lsa='ls_extended -lah'
+alias cls='clear && neofetch'
+alias btop='btop --utf-force'
+alias spt='~/scripts/launchspt'
+alias powermenu='~/scripts/powermenu'
+alias slauncher='~/scripts/slauncher'
+alias launcher='~/scripts/launcher'
+alias vi='nvim'
+
+alias bash='clear && exec bash'
