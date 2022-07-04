@@ -2,6 +2,9 @@
 ### ZSH HOME
 export ZSH=$HOME/.zsh
 
+## Source p10k at start of .zshrc
+source $ZSH/snippets/p10k.zsh
+
 ## EDTIOR
 export EDITOR='nvim'
 export VISUAL='nvim'
