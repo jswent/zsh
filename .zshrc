@@ -2,8 +2,12 @@
 ### ZSH HOME
 export ZSH=$HOME/.zsh
 
-## Source p10k at start of .zshrc
-source $ZSH/snippets/p10k.zsh
+## Load colors
+autoload -U colors && colors
+
+## Choose theme
+#source $ZSH/themes/p10k.zsh
+#source $ZSH/themes/agnoster.zsh-theme
 
 ## EDTIOR
 export EDITOR='nvim'
@@ -26,9 +30,12 @@ source $ZSH/plugins/init.zsh
 # Source aliases
 source $ZSH/.aliases
 
+# If no theme selected load prompt
+PS1=$'%B\e[1;34m[\e[1;93m%n\e[1;36m@\e[1;93m\%m\e[1;34m] \e[1;90m%~ $(gitprompt)\e[1;34m ❯%b \e[0m'
+
 # Zsh to use the same colors as ls
-eval $(env TERM=alacritty-color dircolors)
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}  
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # Terminal theme 
 /home/jswent/scripts/termtheme nord.yml
