@@ -31,7 +31,7 @@ source $ZSH/plugins/init.zsh
 source $ZSH/.aliases
 
 # If no theme selected load prompt
-PS1=$'%B\e[1;34m[\e[1;93m%n\e[1;36m@\e[1;93m\%m\e[1;34m] \e[1;90m%~ $(gitprompt)\e[1;34m ❯%b \e[0m'
+PROMPT=$'%B%{\e[1;34m%}[%{\e[1;93m%}%n%{\e[1;36m%}@%{\e[1;93m%}%m%{\e[1;34m%}] %{\e[1;90m%}%~ $(gitprompt)%{\e[1;34m%}❯%b %{\e[0m%}'
 
 # Zsh to use the same colors as ls
 export CLICOLOR=1
@@ -43,6 +43,6 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 # Keymaps 
 bindkey '^ ' autosuggest-accept
 
-# neofetch
-neofetch
+# display hardware
+sfetch
 
