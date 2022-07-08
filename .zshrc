@@ -5,9 +5,8 @@ export ZSH=$HOME/.zsh
 ## Load colors
 autoload -U colors && colors
 
-## Choose theme
-#source $ZSH/themes/p10k.zsh
-#source $ZSH/themes/agnoster.zsh-theme
+## Choose theme (p10k, agnoster, ...)
+export THEME='custom'
 
 ## EDTIOR
 export EDITOR='nvim'
@@ -30,15 +29,17 @@ source $ZSH/plugins/init.zsh
 # Source aliases
 source $ZSH/.aliases
 
-# If no theme selected load prompt
-source $ZSH/snippets/prompt.zsh
+# If no theme or custom selected load prompt
+if [ -z "$THEME" ] || [ "$THEME" = "custom" ]; then
+  source $ZSH/snippets/prompt.zsh
+fi
 
 # Zsh to use the same colors as ls
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # Terminal theme 
-#/home/jswent/scripts/termtheme nord.yml
+/home/jswent/scripts/termtheme nord.yml
 
 # Keymaps 
 bindkey '^ ' autosuggest-accept
