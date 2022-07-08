@@ -7,4 +7,5 @@ source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 #source $ZSH/plugins/git.plugin.zsh
 source $ZSH/plugins/nvm.plugin.zsh
 source $ZSH/plugins/git-prompt.zsh
-source $ZSH/plugins/fzf/*.zsh
+source $ZSH/plugins/fzf/completion.zsh 
+source $ZSH/plugins/fzf/key-bindings.zsh
