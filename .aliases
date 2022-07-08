@@ -1,7 +1,6 @@
 # Colorful ZSH
 if [ -x /usr/bin/dircolors ]; then
   test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-  alias ls='ls_extended'
   alias dir='dir --color=auto'
   alias vdir='vdir --color=auto'
   alias grep='grep --color=auto'
@@ -10,8 +9,9 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # Personal aliases
-alias ll='ls_extended -alF'
-alias lsa='ls_extended -lah'
+alias ls='exa --icons --color=always --group-directories-first'
+alias ll='ls -lF'
+alias lsa='ls -lah'
 alias cls='clear && neofetch'
 alias btop='btop --utf-force'
 alias spt='~/scripts/launchspt'
@@ -19,5 +19,6 @@ alias powermenu='~/scripts/powermenu'
 alias slauncher='~/scripts/slauncher'
 alias launcher='~/scripts/launcher'
 alias vi='nvim'
+alias sfetch='neofetch --ascii_distro arch --ascii ~/machfiles/ascii'
 
 alias bash='clear && exec bash'
