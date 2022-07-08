@@ -31,14 +31,14 @@ source $ZSH/plugins/init.zsh
 source $ZSH/.aliases
 
 # If no theme selected load prompt
-PROMPT=$'%B%{\e[1;34m%}[%{\e[1;93m%}%n%{\e[1;36m%}@%{\e[1;93m%}%m%{\e[1;34m%}] %{\e[1;90m%}%~ $(gitprompt)%{\e[1;34m%}❯%b %{\e[0m%}'
+source $ZSH/snippets/prompt.zsh
 
 # Zsh to use the same colors as ls
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # Terminal theme 
-/home/jswent/scripts/termtheme nord.yml
+#/home/jswent/scripts/termtheme nord.yml
 
 # Keymaps 
 bindkey '^ ' autosuggest-accept
