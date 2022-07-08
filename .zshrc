@@ -38,11 +38,13 @@ fi
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
-# Terminal theme 
-/home/jswent/scripts/termtheme nord.yml
+# Change terminal theme if on my arch systems
+if [ "$(hostname)" = "arch-turbo" ] || [ "$(hostname)" = "arch-blade" ]; then
+  /home/jswent/scripts/termtheme nord.yml
+fi 
 
 # Keymaps 
-bindkey '^ ' autosuggest-accept
+source $ZSH/keymaps.zsh
 
 # display hardware
 sfetch
