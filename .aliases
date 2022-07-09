@@ -21,4 +21,19 @@ alias launcher='~/scripts/launcher'
 alias vi='nvim'
 alias sfetch='neofetch --ascii_distro arch --ascii ~/machfiles/ascii'
 
+# git functions
+push () {
+  current_branch=$(git rev-parse --abbrev-ref HEAD)
+  branches=$(git remote -v | grep push | awk '{print $1}')
+  for branch in "$branches"
+  do
+    git push -u "$branch" "$current_branch"
+  done
+  
+}
+
+# git aliases
+alias gs='git status'
+alias gp=push
+
 alias bash='clear && exec bash'
