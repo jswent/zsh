@@ -9,3 +9,4 @@ source $ZSH/plugins/nvm.plugin.zsh
 source $ZSH/plugins/git-prompt.zsh
 source $ZSH/plugins/fzf/completion.zsh 
 source $ZSH/plugins/fzf/key-bindings.zsh
+source $ZSH/plugins/navi-plugin.zsh
