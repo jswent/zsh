@@ -36,4 +36,11 @@ push () {
 alias gs='git status'
 alias gp=push
 
+# change dir aliases
+alias cds='cd $HOME/scripts && lsa'
+alias cdd='cd $HOME/Documents && lsa'
+alias cdz='cd $HOME/.zsh && lsa'
+alias cdb='cd $HOME/.bash && lsa'
+alias cdc='cd $HOME/.config && lsa'
+
 alias bash='clear && exec bash'
