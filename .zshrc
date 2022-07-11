@@ -20,11 +20,21 @@ setopt appendhistory
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
 
+## SELECT PLUGINS
+export plugins=(
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+  nvm 
+  git-prompt
+  fzf
+  navi-plugin
+)
+
 # Source snippets
 source $ZSH/snippets/init.zsh
 
-# Source plugins 
-source $ZSH/plugins/init.zsh
+## ENABLE PLUGIN MANAGER 
+source $ZSH/plugins/zpm.zsh
 
 # Source aliases
 source $ZSH/.aliases
