@@ -42,5 +42,6 @@ alias cdd='cd $HOME/Documents && lsa'
 alias cdz='cd $HOME/.zsh && lsa'
 alias cdb='cd $HOME/.bash && lsa'
 alias cdc='cd $HOME/.config && lsa'
+alias cdt='cd $HOME/.tmux && lsa'
 
 alias bash='clear && exec bash'
