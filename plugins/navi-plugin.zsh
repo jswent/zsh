@@ -1,6 +1,6 @@
 # $ZSH/plugins/navi.zsh
 
-FZF_DEFAULT_OPTS="--height 70% --reverse --inline-info --cycle $FZF_DEFAULT_OPTS"
+FZF_DEFAULT_OPTS="--height 40% --reverse --inline-info --cycle $FZF_DEFAULT_OPTS"
 
 _navi_call() {
    local result="$(navi "$@" </dev/tty)"
