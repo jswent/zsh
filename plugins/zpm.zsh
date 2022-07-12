@@ -27,6 +27,8 @@ if [ -n "$plugins" ]; then
   for plugin in $=plugins; do 
     if is_local_plugin "$plugin"; then
       source_local_plugin "$plugin"
-    fi 
+    fi
+
+    [ -f "$ZSH/config/$plugin.zsh" ] && source "$ZSH/config/$plugin.zsh"
   done 
 fi      
