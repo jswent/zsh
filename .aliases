@@ -40,6 +40,7 @@ alias ggr='git reset'
 alias ggmv='git mv -f'
 alias ggrm='git rm -rf'
 alias ggp=push
+alias ggui='gitui'
 
 # go to aliases
 alias gs='cd $HOME/scripts && lsa'
@@ -48,5 +49,6 @@ alias gz='cd $HOME/.zsh && lsa'
 alias gb='cd $HOME/.bash && lsa'
 alias gc='cd $HOME/.config && lsa'
 alias gt='cd $HOME/.tmux && lsa'
+alias gv='cd $HOME/.config/nvim && lsa'
 
 alias bash='clear && exec bash'
