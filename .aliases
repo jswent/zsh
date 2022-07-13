@@ -12,7 +12,7 @@ fi
 alias ls='exa --icons --color=always --group-directories-first'
 alias ll='ls -lF'
 alias lsa='ls -lah'
-alias cls='clear && neofetch'
+alias cls='clear && sfetch'
 alias btop='btop --utf-force'
 alias spt='~/scripts/launchspt'
 alias powermenu='~/scripts/powermenu'
@@ -33,15 +33,20 @@ push () {
 }
 
 # git aliases
-alias gs='git status'
-alias gp=push
+alias ggs='git status'
+alias gga='git add'
+alias ggc='git commit -m'
+alias ggr='git reset'
+alias ggmv='git mv -f'
+alias ggrm='git rm -rf'
+alias ggp=push
 
-# change dir aliases
-alias cds='cd $HOME/scripts && lsa'
-alias cdd='cd $HOME/Documents && lsa'
-alias cdz='cd $HOME/.zsh && lsa'
-alias cdb='cd $HOME/.bash && lsa'
-alias cdc='cd $HOME/.config && lsa'
-alias cdt='cd $HOME/.tmux && lsa'
+# go to aliases
+alias gs='cd $HOME/scripts && lsa'
+alias gd='cd $HOME/Documents && lsa'
+alias gz='cd $HOME/.zsh && lsa'
+alias gb='cd $HOME/.bash && lsa'
+alias gc='cd $HOME/.config && lsa'
+alias gt='cd $HOME/.tmux && lsa'
 
 alias bash='clear && exec bash'
