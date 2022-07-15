@@ -30,8 +30,16 @@ export plugins=(
   navi-plugin
 )
 
-# Source snippets
-source $ZSH/snippets/init.zsh
+## SELECT SNIPPETS
+export snippets=(
+  path
+  pyenv
+  theme
+  tmux-autoreload
+)
+
+## ENABLE SNIPPETS MANAGER
+source $ZSH/snippets/spm.zsh
 
 ## ENABLE PLUGIN MANAGER 
 source $ZSH/plugins/zpm.zsh
