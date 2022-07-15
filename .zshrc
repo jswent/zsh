@@ -28,6 +28,7 @@ export plugins=(
   git-prompt
   fzf
   navi-plugin
+  theme-change
 )
 
 ## SELECT SNIPPETS
@@ -65,5 +66,6 @@ fi
 source $ZSH/keymaps.zsh
 
 # display hardware
-sfetch
-
+if [ -n "$(command -v neofetch)" ] && [ -z "$disable_neofetch" ]; then
+  sfetch
+fi
