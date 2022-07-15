@@ -49,7 +49,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # Change terminal theme if on my arch systems
-if [ "$(hostname)" = "arch-turbo" ] || [ "$(hostname)" = "arch-blade" ]; then
+if [ "$(uname -n)" = "arch-turbo" ] || [ "$(uname -n)" = "arch-blade" ]; then
   /home/jswent/scripts/termtheme nord.yml
 fi 
 
