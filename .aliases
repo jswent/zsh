@@ -50,5 +50,7 @@ alias gb='cd $HOME/.bash && lsa'
 alias gc='cd $HOME/.config && lsa'
 alias gt='cd $HOME/.tmux && lsa'
 alias gv='cd $HOME/.config/nvim && lsa'
+alias gw='cd $HOME/Projects/Working && lsa'
+alias ga='cd $HOME/Projects/Archived && lsa'
 
 alias bash='clear && exec bash'
