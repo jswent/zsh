@@ -2,13 +2,13 @@
 
 is_snippet () {
   local name=$1
-  builtin test -f $ZSH/plugins/$name.zsh 
+  builtin test -f $ZSH/snippets/$name.zsh 
 }
 
 source_snippet () {
   local name=$1
   if [ -n "$name" ]; then
-    [ -f "$ZSH/plugins/$name.zsh" ] && source "$ZSH/plugins/$name.zsh"
+    [ -f "$ZSH/snippets/$name.zsh" ] && source "$ZSH/snippets/$name.zsh"
   fi
 }
 
