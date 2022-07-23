@@ -41,6 +41,7 @@ alias ggmv='git mv -f'
 alias ggrm='git rm -rf'
 alias ggp=push
 alias ggui='gitui'
+alias lg='lazygit'
 
 # go to aliases
 alias gs='cd $HOME/scripts && lsa'
@@ -54,3 +55,4 @@ alias gw='cd $HOME/Projects/Working && lsa'
 alias ga='cd $HOME/Projects/Archived && lsa'
 
 alias bash='clear && exec bash'
+alias sourcez='source ~/.zshrc'
