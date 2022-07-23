@@ -37,6 +37,7 @@ export snippets=(
   pyenv
   theme
   tmux-autoreload
+  iterm2
 )
 
 ## ENABLE SNIPPETS MANAGER
