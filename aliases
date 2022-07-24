@@ -13,6 +13,7 @@ alias ls='exa --icons --color=always --group-directories-first'
 alias ll='ls -lF'
 alias lsa='ls -lah'
 alias cls='clear && sfetch'
+alias clr=';clear;test -n $TMUX && tmux clear-history'
 alias btop='btop --utf-force'
 alias spt='~/scripts/launchspt'
 alias powermenu='~/scripts/powermenu'
@@ -57,6 +58,9 @@ alias ga='cd $HOME/Projects/Archived && lsa'
 # tmux aliases
 alias tmkill='killall tmux'
 alias tmls='tmux ls'
+
+# python aliases
+alias py='python3'
 
 alias bash='clear && exec bash'
 alias sourcez='source ~/.zshrc'
