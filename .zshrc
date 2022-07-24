@@ -47,7 +47,7 @@ source $ZSH/snippets/spm.zsh
 source $ZSH/plugins/zpm.zsh
 
 # Source aliases
-source $ZSH/.aliases
+source $ZSH/aliases
 
 # If no theme or custom selected load prompt
 if [ -z "$THEME" ] || [ "$THEME" = "custom" ]; then
