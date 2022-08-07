@@ -67,6 +67,6 @@ fi
 source $ZSH/keymaps.zsh
 
 # display hardware
-if [ -n "$(command -v neofetch)" ] && [ -z "$disable_neofetch" ]; then
+if [ -n "$(command -v neofetch)" ] && [ -z "$disable_neofetch" ] && [ ! -f "$ZSH/.disable_neofetch" ]; then
   sfetch
 fi
