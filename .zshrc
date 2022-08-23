@@ -35,7 +35,6 @@ export plugins=(
 export snippets=(
   path
   pyenv
-  theme
   tmux-autoreload
   iterm2
 )
@@ -45,6 +44,9 @@ source $ZSH/snippets/spm.zsh
 
 ## ENABLE PLUGIN MANAGER 
 source $ZSH/plugins/zpm.zsh
+
+## ENABLE THEME LOADER
+source $ZSH/themes/theme-loader.zsh
 
 # Source aliases
 source $ZSH/aliases
