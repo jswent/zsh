@@ -23,6 +23,7 @@ fi
 
 # clone new zsh config 
 git clone https://github.com/jswent/zsh "$HOME/.zsh" 
+local ZSH="$HOME/.zsh"
 
 # link zsh config to .zshrc 
 echo "$fg_bold[green]Creating symlink $HOME/.zsh/.zshrc -> $HOME/.zshrc$reset_color"
