@@ -21,11 +21,12 @@ alias slauncher='~/scripts/slauncher'
 alias launcher='~/scripts/launcher'
 alias vi='nvim'
 alias sfetch='neofetch --ascii_distro arch --ascii ~/machfiles/ascii'
+alias ss='eval "$(starship init zsh)" && clear'
 
 # git functions
 push () {
-  current_branch=$(git rev-parse --abbrev-ref HEAD)
-  branches=$(git remote -v | grep push | awk '{print $1}')
+  local current_branch=$(git rev-parse --abbrev-ref HEAD)
+  local branches=$(git remote -v | grep push | awk '{print $1}')
   for branch in "$branches"
   do
     git push -u "$branch" "$current_branch"
@@ -61,6 +62,13 @@ alias tmls='tmux ls'
 
 # python aliases
 alias py='python3'
+
+# mass change extension function
+mvext () {
+  local current_extension="$1"
+  local to_extension="$2" 
+  for f in *."$current_extension"; do mv -- "$f" "${f%.$current_extension}.$to_extension"; done
+}
 
 alias bash='clear && exec bash'
 alias sourcez='source ~/.zshrc'
