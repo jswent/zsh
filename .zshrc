@@ -22,6 +22,7 @@ setopt HIST_FIND_NO_DUPS
 
 ## SELECT PLUGINS
 export plugins=(
+  fig
   zsh-syntax-highlighting
   zsh-autosuggestions
   nvm 
@@ -33,6 +34,7 @@ export plugins=(
 
 ## SELECT SNIPPETS
 export snippets=(
+  env
   path
   pyenv
   tmux-autoreload
@@ -72,3 +74,6 @@ source $ZSH/keymaps.zsh
 if [ -n "$(command -v neofetch)" ] && [ -z "$disable_neofetch" ] && [ ! -f "$ZSH/.disable_neofetch" ]; then
   sfetch
 fi
+
+# Fig post block 
+[[ "$FIG_ACTIVE" = "True" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
