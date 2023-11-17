@@ -3,5 +3,5 @@ local OS=$(uname -s)
 
 if [ "$OS" = 'Darwin' ]; then
   test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-  unalias imgcat
+  alias imgcat >/dev/null 2>&1 && unalias imgcat
 fi
