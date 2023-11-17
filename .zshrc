@@ -22,7 +22,6 @@ setopt HIST_FIND_NO_DUPS
 
 ## SELECT PLUGINS
 export plugins=(
-  fig
   zsh-syntax-highlighting
   zsh-autosuggestions
   nvm 
