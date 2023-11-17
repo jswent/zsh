@@ -30,6 +30,7 @@ export plugins=(
   fzf
   navi-plugin
   theme-change
+  jump
 )
 
 ## SELECT SNIPPETS
@@ -75,5 +76,3 @@ if [ -n "$(command -v neofetch)" ] && [ -z "$disable_neofetch" ] && [ ! -f "$ZSH
   sfetch
 fi
 
-# Fig post block 
-[[ "$FIG_ACTIVE" = "True" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
