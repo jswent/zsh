@@ -75,3 +75,5 @@ if [ -n "$(command -v neofetch)" ] && [ -z "$disable_neofetch" ] && [ ! -f "$ZSH
   sfetch
 fi
 
+# Run final prelaunch scripts
+source $ZSH/snippets/prelaunch.zsh
