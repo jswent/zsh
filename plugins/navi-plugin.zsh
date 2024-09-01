@@ -35,4 +35,4 @@ _navi_widget() {
 }
 
 zle -N _navi_widget
-bindkey '^g' _navi_widget
+bindkey '^n' _navi_widget
