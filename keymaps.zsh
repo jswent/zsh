@@ -6,7 +6,6 @@ bindkey '^ ' autosuggest-accept
 launchneovim () { nvim . }
 zle -N launchneovim
 
-launchranger () { ranger <$TTY; zle redisplay; }
 launchfiles () { 
   if command -v yazi >/dev/null 2>&1; then
     yazi <$TTY
@@ -19,6 +18,10 @@ launchfiles () {
 }
 zle -N launchfiles
 
+launchlazygit () { lazygit; zle redisplay }
+zle -N launchlazygit
+
 # Launch applications
 bindkey '^f' launchfiles
 bindkey '^v' launchneovim
+bindkey '^g' launchlazygit
