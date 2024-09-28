@@ -384,7 +384,7 @@ if [[ -n "$ZSH_VERSION" ]]; then
       fi
   }
 
-  # Bind the widget to CTRL+S
+  # Bind the widget to CTRL+E
   zle -N fzf_machmarks_widget
   bindkey '^e' fzf_machmarks_widget
 fi
