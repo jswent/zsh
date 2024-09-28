@@ -9,7 +9,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # Personal aliases
-alias ls='exa --icons --color=always --group-directories-first'
+alias ls='eza --icons --color=always --group-directories-first'
 alias ll='ls -lF'
 alias lsa='ls -lah'
 alias cls='clear && sfetch'
@@ -19,6 +19,7 @@ alias spt='~/scripts/launchspt'
 alias powermenu='~/scripts/powermenu'
 alias slauncher='~/scripts/slauncher'
 alias launcher='~/scripts/launcher'
+alias nvim='nvim --listen /tmp/nvim-$RANDOM'
 alias vi='nvim'
 alias sfetch='neofetch --ascii_distro arch --ascii ~/machfiles/ascii'
 alias ss='eval "$(starship init zsh)" && clear'
@@ -41,7 +42,7 @@ alias ggc='git commit -m'
 alias ggr='git reset'
 alias ggmv='git mv -f'
 alias ggrm='git rm -rf'
-alias ggp=push
+# alias ggp=push
 alias ggui='gitui'
 alias lg='lazygit'
 
@@ -55,6 +56,14 @@ alias gt='cd $HOME/.tmux && lsa'
 alias gv='cd $HOME/.config/nvim && lsa'
 alias gw='cd $HOME/Projects/Working && lsa'
 alias ga='cd $HOME/Projects/Archived && lsa'
+alias gsb='cd $HOME/Projects/Sandbox && lsa'
+
+# machmarks aliases
+alias m='machmarks'
+alias mm='m -g'
+alias ms='m -s'
+alias ml='m -l'
+alias mla='m -L'
 
 # tmux aliases
 alias tmkill='killall tmux'

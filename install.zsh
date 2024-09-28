@@ -2,7 +2,7 @@
 
 autoload -U colors && colors
 
-local dependencies=( fzf neofetch exa navi entr )
+local dependencies=( fzf neofetch eza navi entr )
 
 # check if .zsh already exists, if so backup
 if [ -d "$HOME/.zsh" ]; then
