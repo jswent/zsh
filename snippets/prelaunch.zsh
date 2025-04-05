@@ -2,7 +2,7 @@
 source $ZSH/plugins/fzf/fzf-git.sh
 
 # Initialize starship prompt if theme is set to starship
-if [[ "$THEME" == "starship" ]]; then
+if [[ "$THEME" == "starship" || "$THEME_OVERRIDE" == "starship" ]]; then
   eval "$(starship init zsh)"
 fi
 
